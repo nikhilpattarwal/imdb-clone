@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+}
+body{
+   background-color: #1F1F1F;
+   color: white;
+   font-family: system-ui ;
+}
+
+p{
+    font-size: 2.1vh;
+}
+
+#moviehub{
+    padding: 4vh 0vw 1vh 2vw;
+    background-color: #3d3a3a;
+}
+
+.search-movie{
+    background-color: #5f5858;
+}
+
+.movie{
+    color: #fff3b6;
+}
+
+.hub{
+    color: yellow;
+}
+
+.search-bar-text{
+    display: flex;
+    padding: 8vh 0vw 8vh 2vw;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 12vh;
+}
+
+.poster-descreption{
+    display: flex;
+    gap: 7vh;
+    justify-content: center;
+}
+
+.descreption{
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:1vh;
+}
+
+
+#input-box{
+    width: 403px;
+    outline: none;
+    height: 3vh;
+    font-size: 2.2vh;
+    color: #676060;
+    font-weight: bold;
+}
+
+#input-box::placeholder{
+    font-size: 2vh;
+}
+
+.poster img{
+    width: 39vh;
+    height: 60vh;
+}
+
+.head{
+    font-size: 3vh;
+    display:flex ;
+    align-items: baseline;
+    gap: 2vw;
+}
+.movie-name{
+ color:rgb(211, 211, 24);
+}
+
+
+.arrange{
+    display: flex;
+    gap: 1vh;
+}
+
+.detailed-info div{
+    padding: .5vh 0vw .5vh 0vw;
+}
+
+.paragraph{
+    max-width: 55vh;
+}
+
+.heading-and-rating{
+    background-color: #ffff0040;
+    display: flex;
+    align-items: baseline;
+}
+
+.genere-name{
+    background-color: grey;
+}
+
+.language{
+    color:rgb(211, 211, 24);
+}
+
+.search-list-item{
+    
+    display: flex;
+    gap: 1vh;
+    width: 57vh;
+    background-color: #5f5858;
+    align-items: stretch;
+    padding: 1vh;
+    margin-bottom: .3vh;
+}
+
+.search-img img{
+    height: 9vh;
+    width: 6vh;
+}
+
+.name-year-tag{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: -0.3vh;
+    gap: 1vh;
+}
+
+.name-year-tag h3{
+    /* width: 26vw; */
+    font-size: 2.2vh;
+}
+
+.float-rating{
+    display: flex;
+    align-items: baseline;
+    flex-wrap: nowrap;
+    width: 28vh;
+}
+
+.float-rating h4{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 1vh;
+
+}
+
+
+.search-list{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    overflow: auto;
+    max-height: 50vh;
+     scroll-behavior: smooth;/* Enable smooth scrolling */
+     z-index: 1;
+}
+
+/* Customize the scrollbar styles */
+.search-list::-webkit-scrollbar {
+    width: .5vw; /* Width of the scrollbar */
+  }
+  
+  .search-list::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the track */
+  }
+  
+  .search-list::-webkit-scrollbar-thumb {
+    background-color: #ced113; /* Color of the scrollbar thumb */
+    border-radius: 2vh /* Rounded corners of the thumb */
+  }
+  
+  .search-list::-webkit-scrollbar-thumb:hover {
+    background-color: #3d3a3a; /* Color of the scrollbar thumb on hover */
+  }
+
+
+  /* ------------------------favoutite section------------------- */
+  .favourite-wrapper{
+    display: flex;
+    padding: 2vh 2vw;
+    flex-direction: column;
+  }
+  #fav-movies-heading{
+    padding: 0 0 0 2vw;
+    color: #ced113;
+  }
+
+  #fav-content-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    z-index: 0;
+    position: relative;
+  }
+  .name-year-icon-f{
+    display: flex;
+    align-items: flex-start;
+    position: absolute;
+    flex-direction: row;
+    
+    color: #e0e0af;
+  }
+
+  .f-image{
+    position: relative;
+  overflow: hidden;
+  }
+  .f-image img{
+    height: 20em;
+    width: 13.3em;
+  }
+  .name-year-tag-f{
+    font-size: 2.5vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 12rem;
+  }
+  .heart-icon{
+    font-size: 3vh;
+  }
+
+  .f-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle, transparent, black);
+    mix-blend-mode: multiply;
+  }
+   
+  .cross-icon{
+    font-size: 3vh;
+  }
+
+/* Javascript classes */
+
+.hide-suggestion-list{
+    display:none;
+}
+
+.red-heart {
+    color: red;
+}
+
+.fa-xmark{
+    font-size: 4vh;
+}
