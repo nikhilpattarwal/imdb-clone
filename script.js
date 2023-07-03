@@ -13,7 +13,7 @@ async function loadMovies(searchedWord){
     const resource = await fetch(`${url}`);
     const data = await resource.json();
     if(data.Response == "True") displayMovieList(data.Search);
-    console.log(data);
+    // console.log(data);
 }
 
 //  find movie in search box
@@ -224,7 +224,7 @@ function addToFavorites(details) {
       // console.log("Clicked on the xmark icon");
       // console.log(xmarkIcon);
       xmarkIcon.addEventListener("click", () => {
-        console.log("Clicked on the xmark icon");
+        // console.log("Clicked on the xmark icon");
         removeFromFavorites(details);
         newDiv.remove();
       });
