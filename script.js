@@ -208,6 +208,16 @@ function addToFavorites(details) {
       </div>
     `;
     favContentItems.appendChild(newDiv);
+    const favImage = newDiv.querySelector(".f-image");
+    const nameYearTagF = newDiv.querySelector(".name-year-tag-f");
+
+    nameYearTagF.addEventListener("click", function(){
+      displayMovieDetails(details);
+    })
+
+      favImage.addEventListener("click", function(){
+        displayMovieDetails(details);
+      })
 
       // Add click event listener to the "fa-xmark" icon
       const xmarkIcon = newDiv.querySelector(".cross-icon");
